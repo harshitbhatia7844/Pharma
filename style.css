@@ -1259,55 +1259,6 @@ body{
 /*=============================
 	End Schedule CSS
 ===============================*/
-.contact {
-    margin-top: 5%;
-    padding: 0 5% 5%
-}
-
-.contact .contact-info {
-    align-items: stretch;
-    display: flex;
-    justify-content: center
-}
-
-.contact .contact-info .contact-info-card {
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #0000004d;
-    display: flex;
-    flex-direction: column;
-    margin: 1%;
-    padding: 2%;
-    width: 33.3333333333%
-}
-
-.contact .contact-info .contact-info-card:hover {
-    background: linear-gradient(90deg,#e22d2d,#e22d2d 50%,#e22d2d);
-    transition: all .5s ease
-}
-
-.contact .contact-info .contact-info-card:hover svg {
-    fill: #fff;
-    transition: all .5s ease
-}
-
-.contact .contact-info .contact-info-card:hover a {
-    color: #fff;
-    transition: all .5s ease
-}
-
-.contact .contact-info .contact-info-card svg {
-    fill: #e22d2d;
-    height: 80px;
-    margin-top: 5%;
-    transform: translate(150%,-30%);
-    width: 80px
-}
-
-.contact .contact-info .contact-info-card a {
-    color: #e22d2d;
-    font-size: 1.3vw;
-    text-align: center
-}
 
 /*=============================
 	Start Feautes CSS
@@ -3921,7 +3872,59 @@ body{
 /*=========================
    End Contact Us CSS
 ===========================*/
-
+.ayurveda .contact-info{
+	margin-top:50px;
+}
+.ayurveda .single-info {
+	background: #e22d2d;
+	padding: 20px 20px;
+	border-radius: 10px;
+	height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position:relative;
+	-webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
+.ayurveda .single-info:before{
+	position: absolute;
+    z-index: -1;
+    content: '';
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 80%;
+    height: 90%;
+    background:#e22d2d;
+    opacity: 0;
+    filter: blur(10px);
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
+.ayurveda .single-info:hover:before{
+	opacity: 0.8;
+}
+.ayurveda .single-info:hover{
+	transform: translateY(-5px);
+}
+.ayurveda .single-info .content {
+	margin-left: 1px;
+}
+.ayurveda .single-info .content h3{
+	color:#fff;
+	font-size:25px;
+	font-weight:600;
+	
+}
 /*========================
 	Start Error 404 CSS
 ==========================*/ 
